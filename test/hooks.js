@@ -4,10 +4,9 @@ process.env.PORT=3001
 var db;
 
 before('Starting server', function() {
-  require('../server.js')(db);
-  console.log(db);
+  require('../server.js');
 });
 
 after('Clean database', function() {
- console.log('acaboooooooou');
+ console.log('finished');
 })
